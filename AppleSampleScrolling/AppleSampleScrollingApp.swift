@@ -11,7 +11,7 @@ import SwiftUI
 struct AppleSampleScrollingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigatorView(viewModel: .init())
         }
     }
 }

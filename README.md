@@ -14,6 +14,10 @@ To illustrate the issue, I created a sample project (attached) with two screens:
 
 I am currently using Xcode 26 beta 6, but I can also reproduce this issue on Xcode 16.3.
 
+# Demo
+
+https://github.com/user-attachments/assets/1c0a69a5-ba24-4641-abec-0ae8d7fa1234
+
 # Tests on sample project
 
 I click on a button and just wait the 3 seconds for the call.
@@ -47,7 +51,7 @@ In this scenario, I expect that the “focused item” stays at the exact same p
 
 `position = 4, 5, 6, 7, 8, 9` ⇒ I have a glitch (the focused element moves on the screen) but the focused element is still visible
 
-## Not any user interaction
+# Not any user interaction
 
 Moreover, in this scenario, the user does not interact with the screen during the simulated network call. Regardless of the situation, if the ScrollView is in motion, its position always resets to the top. This behavior prevents us from implementing automatic pagination when scrolling upward, which is ultimately our goal.
 
